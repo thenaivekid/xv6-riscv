@@ -141,7 +141,7 @@ getcmd(char *buf, int nbuf)
 
   // Write the green color code, then the prompt, then reset the color
   write(2, green, strlen(green));
-  write(2, "Ashok$ ", 7);
+  write(2, "root$ ", 6);
   write(2, reset, strlen(reset));
 
   memset(buf, 0, nbuf);
