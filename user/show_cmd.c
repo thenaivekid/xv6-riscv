@@ -2,31 +2,29 @@
 #include "kernel/stat.h"
 #include "user/user.h"
 
-int main(int argc, char *argv[])
+int main()
 {
-    printf("\nAvailable commands:\n");
-    printf("cat      - Display file contents\n");
-    printf("clear    - Clear the screen\n");
-    printf("echo     - Print text to console\n");
-    printf("grep     - Search text patterns\n");
-    printf("help     - Show system information\n");
-    printf("kill     - Terminate a process\n");
-    printf("ln       - Create file links\n");
-    printf("ls       - List directory contents\n");
-    printf("mkdir    - Create directory\n");
-    printf("rm       - Remove files\n");
-    printf("sh       - Shell\n");
-    printf("show_cmd - Show available commands\n");
-    printf("shutdown - Power off the system\n");
-    printf("text     - Simple text editor\n");
-    printf("touch    - Create empty file\n");
-    printf("wc       - Count words/lines\n");
-    printf("\nUsage examples:\n");
-    printf("ls         - List current directory\n");
-    printf("cat file   - Show contents of file\n");
-    printf("mkdir d    - Create directory 'd'\n");
-    printf("touch file - Create empty file\n");
-    printf("text file  - Edit file contents\n");
-    printf("\n");
+    printf("Available commands:\n");
+    printf("cat\n");
+    printf("echo\n");
+    printf("forktest\n");
+    printf("grep\n");
+    printf("init\n");
+    printf("kill\n");
+    printf("ln\n");
+    printf("ls\n");
+    printf("mkdir\n");
+    printf("rm\n");
+    printf("sh\n");
+    printf("stressfs\n");
+    printf("usertests\n");
+    printf("grind\n");
+    printf("wc\n");
+    printf("zombie\n");
+    printf("help\n");
+    printf("shutdown\n");
+    printf("clear\n");
+    printf("editor\n");
+    printf("show_cmd\n");
     exit(0);
 }
