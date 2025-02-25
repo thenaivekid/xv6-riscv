@@ -6,6 +6,8 @@
 - [x] help
 - [x] shutdown
 - [x] name before $ sign
+- [x] change color of Ashok$ to green
+- [x] change color of user command to yellow
 - [ ] clear
 - [ ] time 
 - [ ] Implement a simple text editor:

@@ -135,6 +135,9 @@ consoleread(int user_dst, uint64 dst, int n)
 void
 consoleintr(int c)
 {
+  char *yellow = "\033[0;33m";  // ANSI escape code for yellow color
+  char *reset = "\033[0m";    // ANSI escape code to reset color
+
   acquire(&cons.lock);
 
   switch(c){
@@ -159,8 +162,12 @@ consoleintr(int c)
     if(c != 0 && cons.e-cons.r < INPUT_BUF_SIZE){
       c = (c == '\r') ? '\n' : c;
 
-      // echo back to the user.
+      // echo back to the user with yellow color.
+      for (char *p = yellow; *p; p++)
+        uartputc_sync(*p);
       consputc(c);
+      for (char *p = reset; *p; p++)
+        uartputc_sync(*p);
 
       // store for consumption by consoleread().
       cons.buf[cons.e++ % INPUT_BUF_SIZE] = c;
