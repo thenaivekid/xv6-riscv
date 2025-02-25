@@ -10,11 +10,12 @@
 - [x] change color of user command to yellow
 - [x] clear
 - [x] Implement a simple text editor:
-- [ ] show_cmd that shows all available cmds
+- [x] show_cmd that shows all available cmds
 - [x] change readme to readme.md for prettier readme and update with our todo and informations
 
 
 # Usage On Ubuntu 24 LTS 
+First, we made a fork from https://github.com/mit-pdos/xv6-riscv
 
 ```bash
 git clone git@github.com:thenaivekid/xv6-riscv.git
@@ -38,4 +39,14 @@ To use the editor
 editor name.txt
 Ashok says hi
 Ctrl + d # to exit and save
+```
+
+To see all the commands available:
+```bash
+show_cmd
+```
+
+For a little surprise:
+```bash
+help
 ```

@@ -143,6 +143,7 @@ UPROGS=\
 	$U/_shutdown\
 	$U/_clear\
 	$U/_editor\
+	$U/_show_cmd\
 
 fs.img: mkfs/mkfs README.md $(UPROGS)
 	mkfs/mkfs fs.img README.md $(UPROGS)
