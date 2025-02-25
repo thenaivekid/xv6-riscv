@@ -1,59 +1,91 @@
-# Our verion of xv6-riscv os
+# Enhanced xv6-riscv Operating System
 
--   Ashok Prasad Neupane
--   Anil Shrestha
--   Jeevan Neupane
+A customized version of MIT's xv6-riscv operating system with additional features and improvements.
 
-# TODO
+[View Demo](https://drive.google.com/file/d/1oyY42pzPlJZK5mvNvH8TPkmaEiAPlxR-/view?usp=sharing)
 
--   [x] help
--   [x] shutdown
--   [x] name before $ sign
--   [x] change color of Ashok$ to green
--   [x] change color of user command to yellow
--   [x] clear
--   [x] Implement a simple text editor:
--   [x] show_cmd that shows all available cmds
--   [x] change readme to readme.md for prettier readme and update with our todo and informations
+## Installation
 
-# Usage On Ubuntu 24 LTS
+### Prerequisites
+- Ubuntu 24 LTS
 
-First, we made a fork from https://github.com/mit-pdos/xv6-riscv
+### Setup Instructions
 
+1. Clone the repository:
+    ```bash
+    git clone git@github.com:thenaivekid/xv6-riscv.git
+    ```
+
+2. Install required packages:
+    ```bash
+    sudo apt-get install git build-essential qemu-system-riscv64
+    sudo apt-get install gcc-riscv64-linux-gnu binutils-riscv64-linux-gnu
+    ```
+
+3. Build and run:
+    ```bash
+    make clean && make && make qemu
+    ```
+
+## Usage
+
+### Basic Commands
+
+- `cat` - Display file contents
+- `echo` - Print text to console
+- `grep` - Search for patterns in files
+- `init` - Initialize user environment
+- `kill` - Terminate processes
+- `ln` - Create links between files
+- `ls` - List directory contents
+- `mkdir` - Create new directory
+- `rm` - Remove files
+- `sleep` - Pause execution
+- `stressfs` - File system stress test
+- `usertests` - Run system tests
+- `wc` - Count words/lines in files
+- `zombie` - Create zombie process test
+- `show_cmd` - Display all available commands
+- `help` - Show help information
+- `clear` - Clear the screen
+- `shutdown` - Safely shutdown the system
+- `editor` - Simple text editor
+
+### Text Editor Usage
 ```bash
-git clone git@github.com:thenaivekid/xv6-riscv.git
-
-sudo apt-get install git build-essential qemu-system-riscv64
-
-sudo apt-get install gcc-riscv64-linux-gnu binutils-riscv64-linux-gnu
-
-make clean && make && make qemu
-
+editor filename.txt
+# Type your content
+# Press Ctrl + D to save and exit
 ```
 
-To exit from xv6 os:
+### Exiting xv6
+Press `Ctrl + A` followed by `X`
 
-```bash
-Ctrl + a
-x
-```
+## Project Status
 
-To use the editor
+### Completed Features
+- [x] Colorful command prompt
+- [x] Username display before prompt
+- [x] Command help system
+- [x] System shutdown command
+- [x] Screen clearing
+- [x] Text editor
+- [x] Command listing utility
 
-```bash
-editor name.txt
-Ashok says hi
-Ctrl + d # to exit and save
-```
+### Commands Added
+- `clear` - Clear the screen
+- `shutdown` - Safely shutdown the system
+- `show_cmd` - Show all available commands
+- `editor` - Simple text editor
+- `help` - Show help information
 
-To see all the commands available:
+## Contributors
 
-```bash
-show_cmd
-```
+- Ashok Prasad Neupane
+- Anil Shrestha
+- Jeevan Neupane
 
-For a little surprise:
+## Acknowledgments
 
-```bash
-help
-```
+- Based on MIT's [xv6-riscv](https://github.com/mit-pdos/xv6-riscv)
+- Original xv6 developed by MIT PDOS team
