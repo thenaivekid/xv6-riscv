@@ -134,15 +134,22 @@ runcmd(struct cmd *cmd)
 int
 getcmd(char *buf, int nbuf)
 {
-  // write(2, "$ ", 2);
+  // ANSI escape code for green color
+  char *green = "\033[0;32m";
+  // ANSI escape code to reset color
+  char *reset = "\033[0m";
+
+  // Write the green color code, then the prompt, then reset the color
+  write(2, green, strlen(green));
   write(2, "Ashok$ ", 7);
+  write(2, reset, strlen(reset));
+
   memset(buf, 0, nbuf);
   gets(buf, nbuf);
   if(buf[0] == 0) // EOF
     return -1;
   return 0;
 }
-
 int
 main(void)
 {
