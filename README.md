@@ -8,11 +8,11 @@
 - [x] name before $ sign
 - [x] change color of Ashok$ to green
 - [x] change color of user command to yellow
-- [ ] clear
+- [x] clear
 - [ ] time 
 - [ ] Implement a simple text editor:
 - [ ] show_cmd that shows all available cmds
-- [ ]
+- [x] change readme to readme.md for prettier readme and update with our todo and informations
 <!-- - [ ] add the current path before Ashok$ -->
 <!-- - [ ] reboot -->
 
