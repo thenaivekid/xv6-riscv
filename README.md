@@ -6,6 +6,11 @@
 - [x] help
 - [x] shutdown
 - [x] name before $ sign
+- [ ] clear
+- [ ] time 
+- [ ] Implement a simple text editor:
+- [ ] show_cmd that shows all available cmds
+- [ ]
 <!-- - [ ] add the current path before Ashok$ -->
 <!-- - [ ] reboot -->
 
