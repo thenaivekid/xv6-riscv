@@ -9,7 +9,7 @@
 - [x] change color of Ashok$ to green
 - [x] change color of user command to yellow
 - [x] clear
-- [ ] Implement a simple text editor:
+- [x] Implement a simple text editor:
 - [ ] show_cmd that shows all available cmds
 - [x] change readme to readme.md for prettier readme and update with our todo and informations
 
@@ -31,4 +31,11 @@ To exit from xv6 os:
 ```bash
 Ctrl + a
 x
+```
+
+To use the editor
+```bash
+editor name.txt
+Ashok says hi
+Ctrl + d # to exit and save
 ```
