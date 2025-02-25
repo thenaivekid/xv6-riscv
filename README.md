@@ -4,12 +4,10 @@
 - Jeevan Neupane
 # TODO
 - [x] help
-<!-- - [ ] shutdown chatgpt could not do it -->
+- [x] shutdown
 - [x] name before $ sign
-- [ ] add the current path before Ashok$
-- [ ] reboot
-
-
+<!-- - [ ] add the current path before Ashok$ -->
+<!-- - [ ] reboot -->
 
 # Usage On Ubuntu 24 LTS 
 
@@ -28,4 +26,9 @@ To exit from xv6 os:
 ```bash
 Ctrl + a
 x
+```
+
+To reboot xv6 os:
+```bash
+reboot
 ```

@@ -503,3 +503,11 @@ sys_pipe(void)
   }
   return 0;
 }
+
+uint64
+sys_shutdown(void)
+{
+  // Use QEMU's RISC-V sifive_test device for shutdown
+  *(volatile uint32 *)0x100000 = 0x5555;
+  return 0;  // Will not reach here if shutdown succeeds
+}
