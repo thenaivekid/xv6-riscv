@@ -16,6 +16,12 @@ A customized version of MIT's xv6-riscv operating system with additional feature
     git clone git@github.com:thenaivekid/xv6-riscv.git
     ```
 
+2. Navigate to the repository:
+    ```bash
+    cd xv6-riscv
+    ```
+
+
 2. Install required packages:
     ```bash
     sudo apt-get install git build-essential qemu-system-riscv64
