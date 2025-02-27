@@ -55,7 +55,6 @@ A customized version of MIT's xv6-riscv operating system with additional feature
 - `help` - Show help information
 - `clear` - Clear the screen
 - `shutdown` - Safely shutdown the system
-- `editor` - Simple text editor
 
 ### Text Editor Usage
 ```bash
@@ -75,6 +74,7 @@ Press `Ctrl + A` followed by `X`
 - [x] Command help system
 - [x] System shutdown command
 - [x] Screen clearing
+- [x] Create new file 
 - [x] Text editor
 - [x] Command listing utility
 
@@ -82,6 +82,7 @@ Press `Ctrl + A` followed by `X`
 - `clear` - Clear the screen
 - `shutdown` - Safely shutdown the system
 - `show_cmd` - Show all available commands
+- `touch` - Create new file
 - `editor` - Simple text editor
 - `help` - Show help information
 

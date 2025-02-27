@@ -24,7 +24,8 @@ int main()
     printf("help\n");
     printf("shutdown\n");
     printf("clear\n");
-    printf("editor\n");
     printf("show_cmd\n");
+    printf("touch\n");
+    printf("editor\n");
     exit(0);
 }

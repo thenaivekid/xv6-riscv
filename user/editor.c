@@ -15,6 +15,7 @@ void editor(char *filename) {
     exit(1);
   }
 
+  printf("Enter text (press Ctrl+D to save and exit):\n");
   while ((n = read(0, buf, sizeof(buf))) > 0) {
     if (write(fd, buf, n) != n) {
       printf("editor: write error\n");
